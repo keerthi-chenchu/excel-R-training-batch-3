@@ -1,24 +1,20 @@
 import java.util.*;
-class HashSetDemo1 {
-	void HSetMethod() {
-		HashSet<Object> hashSet = new HashSet<>();
+
+class HashSetDemo2{
+    void HashSetMethod(){
+        HashSet<String> hashSet = new HashSet<>();
         Scanner sc = new Scanner(System.in);
-        System.out.println("keerthi");
-        System.out.println("hashu");
-        System.out.println("Abhi");
-        System.out.println("Radhika");
-        System.out.println("Raju");
-        String a = sc.nextLine();
-		hashSet.add(a);
-		System.out.println(hashSet);		
-		for(Object x: hashSet) {
-			System.out.println(x);
-		}
-	}
+        System.out.println("Enter 10 strings: ");
+        for(int i=0; i<10; i++){
+            String s = sc.next();
+            hashSet.add(s);
+        }
+        System.out.println(hashSet);
+    }
 }
-public class Demo032 {
-	public static void main(String[] args) {
-		HashSetDemo1 obj = new HashSetDemo1();
-		obj.HSetMethod();
-	}
+class Demo032{
+    public static void main(String[] args){
+        HashSetDemo2 obj = new HashSetDemo2();
+        obj.HashSetMethod();
+    }
 }
